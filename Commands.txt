@@ -1,0 +1,71 @@
+Command 1 
+ssh root@167.71.230.125
+
+** Takes Inforation like 
+Are you sure want to connect(y/N)
+ANd Password **
+
+Command 2
+Install Node js
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+
+Command 3
+to update and install nvm
+source ~/.bashrc
+
+Command 4
+Now finall installing Node.js
+
+nvm install 14.15.4
+node --version
+npm --version
+
+Command 5
+Clone github repository
+
+git clode {{link}}
+
+so now the repository will be finally available in directory
+will cd into it.
+
+Command 6
+Adding pm2 (production process manager for node.js)
+
+npm i -g pm2
+
+Command 7:
+Adding and configuring Nginx
+
+apt install nginx
+apt update
+
+Command 8:
+will have to add configuration file of nginx 
+ nano /etc/nginx/sites-available/default
+
+will have to edit location part of the file
+location / {
+         proxy_pass http://localhost:{{port}};
+         proxy_http_version 1.1;
+         proxy_set_header Upgrade $http_upgrade;
+         proxy_set_header Connection 'upgrade';
+         proxy_set_header Host $host;
+         proxy_cache_bypass $http_upgrade;
+}
+
+
+Command 9:
+Testing file with new updates
+
+ nginx -t
+
+Command 10:
+restarting the ngnix if fie does not starts or loads
+
+
+systemctl restart nginx
+
+
+
+
