@@ -3,7 +3,7 @@ ssh root@167.71.230.125
 
 ** Takes Inforation like 
 Are you sure want to connect(y/N)
-ANd Password **
+ANd Password: PasswordApp123@Creator **
 
 Command 2
 Install Node js
